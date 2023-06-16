@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overview {
+  display: grid;
+  height: 600px;
+  width: 1024px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 0.1fr;
+  background-color: #040404;
+  color: #FFFFFF;
+  border: 10px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 7px 26px 2px rgba(0,0,0,0.53);
+  box-shadow: 4px 7px 26px 2px rgba(0,0,0,0.53);
+}
+
+.tile {
+  background: rgb(0,0,0);
+  background: linear-gradient(157deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 100%);
+  border-radius: 5px;
+  margin: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 1s;
+}
+
+
+/* #livingroom{
+  background: rgb(0,0,0);
+  background: linear-gradient(157deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 100%);
+} */
+
+
+.tile h2 {
+  cursor: pointer;
+}
+
+.tile:active{
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+} 
+
+.icosvg {
+  height: 70px;
+  width: 70px;
+  fill: white;
+  transform: translatey(20px);
+  cursor: pointer;
+}
+
+/* .active {
+  background: linear-gradient(157deg, rgba(130,57,24,1) 0%,rgba(233,106,47,1) 100%);
+} */
+
+.w1x1 {
+  grid-column: span 1;
+}
+
+.w1x2 {
+  grid-column: span 2;
+}
+
+.w1x3 {
+  grid-column: span 3;
+}
+
+.w1x4 {
+  grid-column: span 4;
+}
+
+.inner-1x {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.inner-2x {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.inner-3x {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+}
+
+.accent-text {
+color: #d05a24;
+}
+
+.footer {
+  grid-column: span 4;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #d05a24;
+  font-size: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.link-orange {
+  background: linear-gradient(157deg, rgba(157,105,22,1) 0%, rgba(255,169,31,1) 100%);
+  color: #FFFFFF;
+  padding: 2px 5px;
+  float: right;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.link-blue {
+  background: linear-gradient(157deg, rgba(130,156,150,1) 0%, rgba(187,228,219,1) 100%);
+  color: #FFFFFF;
+  padding: 2px 5px;
+  float: right;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.link-red {
+  background: linear-gradient(157deg, rgba(152,49,34,1) 0%, rgba(255,78,51,1) 100%);
+  color: #FFFFFF;
+  padding: 2px 5px;
+  float: right;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.link-white {
+  background: #FFFFFF;
+  color: #040404;
+  padding: 2px 5px;
+  float: right;
+  margin-left: 5px;
+}
+
+.icons {
+  flex: 1;
+}
+
+
+.icon-bottom {
+  fill: #d05a24;
+  width: 17px;
+  height: 17px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 470px) {
+  
+  .overview{
+    width: 23em;
+    height: 1000px;
+    margin-top: 50%;
+    padding-top: 5%;
+  }
+
+
+  .inner-2x{
+    width: 20em;
+    height: 50%;
+  }
+
+
+  /* .inner-2x h4{
+    display: none;
+  } */
+
+
+
+  /* .weather-icon{
+    margin-right: -9em;
+  } */
+
+  /* .Welcome{
+    width: 20em;
+    margin-top: -6em;
+    margin-right:  -25em;
+  } */
+
+
+
+
+
+
+  #clock{
+    width: 10em;
+    height: 75%;
+    margin-top: -63%;
+  }
+
+
+  #bedroom{
+    margin-left: -6em;
+    width: 9em;
+    height: 50%;
+  
+  }
+
+  #ext{
+    margin-top: -2em;
+  }
+
+  #bedroom h2{
+    margin-top: 1em;
+  }
+
+
+  #hallway{
+    margin-left: -139%;
+    width: 9em;
+    height: 53%;
+    margin-top: 128%;
+  }
+
+  #livingroom{
+    margin-top: 220px;
+    margin-left: -139%;
+    width: 9em;
+    height: 43%;
+  }
+
+  #livingroom h2{
+    margin-top: 1em;
+  }
+
+  /* #bedroom h2{
+    margin-top: -2em;
+  } */
+
+/* .hallway h2{ 
+
+    margin-top: 2em;
+
+  }
+
+  #pumpp{
+    margin: 20%;
+    width: 50px;
+  } */
+   
+
+  #assistant{
+    margin-top: -145%;
+    width: 10em;
+    height: 127%;
+  }
+
+
+  .wel{
+    display: none;
+  }
+
+
+  #television{
+    display: none;
+  }
+
+
+  /* .tile{
+    background: #89a1d9;
+  } */
+
+  #temp{
+    margin-top: 22%;
+    margin-left: -75%;
+    width: 147%;
+    height: 70%;
+  }
+}
